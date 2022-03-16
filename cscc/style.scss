@@ -418,15 +418,44 @@ table {
           margin-bottom: 81px;
         }
         #degustation {
+          
+          
           input {
             border: none;
             border-bottom: solid 1px #fff;
             background-color: #282828;
             color: #fff;
             padding-bottom: 10px;
+            width: 100%;
             &::placeholder {
               color: #fff;
             }
+          }
+          #name{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            input{
+              width: 255px;
+            }
+          }
+          button{
+            margin-top: 50px;
+            cursor: pointer;
+            padding: 15px 30px;
+            width: 100%;
+            font-family: 'Montserrat';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0.05em;
+text-align: center;
+color:#fff;
+background-color: #282828;
+margin-bottom: 80px;
+
+
           }
         }
       }
@@ -464,12 +493,12 @@ table {
         width: 100%;
         display: flex;
         border-bottom: solid 1px #fff;
-        justify-content: space-between;
+        //justify-content: space-between;
         padding-left: 95px;
         padding-right: 95px;
 		margin-bottom: 50px;
         div {
-			//width: 25%;
+			width: 25%;
           font-family: 'Montserrat';
           font-size: 14px;
           font-style: normal;
@@ -479,10 +508,18 @@ table {
           text-align: center;
 		  padding-top: 19px;
           padding-bottom: 20px;
+          
 		  
 		  /* &:nth-child(2){
 			  border: solid 1px;
 		  } */
+        }
+        #social{
+          display: flex;
+          //padding-left: 57px;
+          //padding-right: 57px;
+          justify-content: space-between;
+        
         }
       }
     }

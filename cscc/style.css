@@ -520,6 +520,7 @@ table {
   background-color: #282828;
   color: #fff;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .wrapper .record .form .center #degustation input::-webkit-input-placeholder {
@@ -536,6 +537,37 @@ table {
 
 .wrapper .record .form .center #degustation input::placeholder {
   color: #fff;
+}
+
+.wrapper .record .form .center #degustation #name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.wrapper .record .form .center #degustation #name input {
+  width: 255px;
+}
+
+.wrapper .record .form .center #degustation button {
+  margin-top: 50px;
+  cursor: pointer;
+  padding: 15px 30px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  background-color: #282828;
+  margin-bottom: 80px;
 }
 
 .wrapper footer {
@@ -584,15 +616,13 @@ table {
   display: -ms-flexbox;
   display: flex;
   border-bottom: solid 1px #fff;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-left: 95px;
   padding-right: 95px;
   margin-bottom: 50px;
 }
 
 .wrapper footer .menu #info2 div {
+  width: 25%;
   font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
@@ -605,5 +635,14 @@ table {
   /* &:nth-child(2){
 			  border: solid 1px;
 		  } */
+}
+
+.wrapper footer .menu #info2 #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
