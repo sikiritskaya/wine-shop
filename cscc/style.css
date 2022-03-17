@@ -148,7 +148,11 @@ table {
 
 .wrapper .contain .first_page header {
   padding-top: 30px;
+}
+
+.wrapper .contain .first_page header a {
   color: #fff;
+  text-decoration: none;
 }
 
 .wrapper .contain .first_page header .contacts {
@@ -211,6 +215,8 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #998431;
+  color: #fff;
+  text-decoration: none;
 }
 
 .wrapper .contain .first_page .order a:first-child {
@@ -318,7 +324,6 @@ table {
 }
 
 .wrapper .third_page .collection .left_side hr {
-  color: #282828;
   width: 160px;
   display: inline-block;
   margin-bottom: 30px;
@@ -362,23 +367,31 @@ table {
   background-color: #e6e3c4;
 }
 
-.wrapper .third_page .collection .left_side .table div h3 {
+.wrapper .third_page .collection .left_side .table .wine_descr {
+  display: block;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.wrapper .third_page .collection .left_side .table .wine_descr h3 {
   font-family: "Playfair Display";
   font-size: 18px;
   line-height: 27px;
   text-align: left;
 }
 
-.wrapper .third_page .collection .left_side .table div p {
+.wrapper .third_page .collection .left_side .table .wine_descr p {
   font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  padding-top: 5px;
 }
 
 .wrapper .third_page .collection .left_side .more_info {
+  cursor: pointer;
   background-color: #998431;
   color: #fff;
   font-family: "Montserrat";
@@ -568,6 +581,7 @@ table {
   color: #fff;
   background-color: #282828;
   margin-bottom: 80px;
+  border: solid 1px;
 }
 
 .wrapper footer {
@@ -610,6 +624,11 @@ table {
   padding-bottom: 20px;
 }
 
+.wrapper footer .menu #info div a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .wrapper footer .menu #info2 {
   width: 100%;
   display: -webkit-box;
@@ -622,7 +641,6 @@ table {
 }
 
 .wrapper footer .menu #info2 div {
-  width: 25%;
   font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
@@ -631,10 +649,24 @@ table {
   letter-spacing: 0em;
   text-align: center;
   padding-top: 19px;
+}
+
+.wrapper footer .menu #info2 div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper footer .menu #info2 #wine_name {
+  text-align: left;
+  width: 255px;
+  cursor: pointer;
+}
+
+.wrapper footer .menu #info2 #wine_tel {
+  width: 235px;
+  border-left: solid 1px;
+  cursor: pointer;
   padding-bottom: 20px;
-  /* &:nth-child(2){
-			  border: solid 1px;
-		  } */
 }
 
 .wrapper footer .menu #info2 #social {
@@ -644,5 +676,26 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 260px;
+  border-left: solid 1px;
+}
+
+.wrapper footer .menu #info2 #social a {
+  cursor: pointer;
+}
+
+.wrapper footer .menu #info2 #social a:first-child {
+  padding-left: 57px;
+}
+
+.wrapper footer .menu #info2 #social a:last-child {
+  padding-right: 57px;
+}
+
+.wrapper footer .menu #info2 #wine_email {
+  width: 171px;
+  text-align: right;
+  border-left: solid 1px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
