@@ -141,9 +141,12 @@ table {
 }
 
 .wrapper .contain {
-  background-image: url(../images/title.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url(../images/title.jpg);
+  background-image: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../images/title.jpg);
   height: 900px;
   background-size: cover;
+  background-position: center -110px;
+  background-repeat: no-repeat;
 }
 
 .wrapper .contain .first_page header {
