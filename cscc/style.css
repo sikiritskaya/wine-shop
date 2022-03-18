@@ -220,6 +220,7 @@ table {
   background-color: #998431;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .wrapper .contain .first_page .order a:first-child {
@@ -407,6 +408,7 @@ table {
   padding: 15px 30px;
   margin-top: 30px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .wrapper .third_page .collection .right_side {
@@ -448,37 +450,51 @@ table {
 .wrapper .record {
   background-color: #282828;
   color: #fff;
+  position: relative;
+  padding-top: 129px;
+  padding-bottom: 100px;
 }
 
 .wrapper .record .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px;
+  border: solid 3px #C4C4C4;
 }
 
 .wrapper .record .form #grape {
-  background-image: url(../images/grape.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 260px;
+  margin-left: -30px;
+  margin-top: -60px;
+  background-color: #282828;
+}
+
+.wrapper .record .form #grape img {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 260px;
   width: 260px;
-  margin-left: -30px;
 }
 
 .wrapper .record .form #barrel {
-  background-image: url(../images/barrel.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #282828;
   height: 200px;
   width: 260px;
   margin-right: -53px;
+  margin-top: -60px;
+}
+
+.wrapper .record .form #barrel img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 200px;
+  width: 260px;
 }
 
 .wrapper .record .form .center {
   text-align: center;
+  padding-right: 78px;
+  padding-left: 56px;
 }
 
 .wrapper .record .form .center h1 {
@@ -486,8 +502,9 @@ table {
   font-size: 36px;
   line-height: 54px;
   letter-spacing: 0em;
-  position: relative;
-  padding-top: 30px;
+  position: absolute;
+  top: 90px;
+  background-color: #282828;
 }
 
 .wrapper .record .form .center h1 span {
@@ -516,7 +533,7 @@ table {
   width: 118px;
   display: inline-block;
   margin-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 69px;
 }
 
 .wrapper .record .form .center p {
@@ -657,6 +674,7 @@ table {
 .wrapper footer .menu #info2 div a {
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .wrapper footer .menu #info2 #wine_name {
