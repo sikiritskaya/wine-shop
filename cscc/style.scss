@@ -737,6 +737,7 @@ table {
           .pic2 {
             height: 90%;
             width: 80%;
+            margin: 0 auto;
           }
         }
         .center {
@@ -748,6 +749,11 @@ table {
     }
     footer {
       .menu {
+        #info {
+          div {
+            font-size: 10px;
+          }
+        }
         #info2 {
           div {
             font-size: 10px;

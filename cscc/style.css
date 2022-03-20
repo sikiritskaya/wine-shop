@@ -856,9 +856,13 @@ table {
   .wrapper .record .form #barrel .pic2 {
     height: 90%;
     width: 80%;
+    margin: 0 auto;
   }
   .wrapper .record .form .center h1 {
     font-size: 30px;
+  }
+  .wrapper footer .menu #info div {
+    font-size: 10px;
   }
   .wrapper footer .menu #info2 div {
     font-size: 10px;
