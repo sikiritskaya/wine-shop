@@ -459,21 +459,23 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid 3px #C4C4C4;
+  border: solid 3px #c4c4c4;
 }
 
 .wrapper .record .form #grape {
-  height: 260px;
-  margin-left: -30px;
-  margin-top: -60px;
   background-color: #282828;
-}
-
-.wrapper .record .form #grape img {
-  -o-object-fit: contain;
-     object-fit: contain;
   height: 260px;
   width: 260px;
+  margin-left: -30px;
+  margin-top: -60px;
+}
+
+.wrapper .record .form #grape .pic1 {
+  background-image: url(../images/grape.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 260px;
 }
 
 .wrapper .record .form #barrel {
@@ -484,11 +486,12 @@ table {
   margin-top: -60px;
 }
 
-.wrapper .record .form #barrel img {
-  -o-object-fit: contain;
-     object-fit: contain;
+.wrapper .record .form #barrel .pic2 {
+  background-image: url(../images/barrel.png);
+  background-size: contain;
   height: 200px;
-  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrapper .record .form .center {
@@ -591,7 +594,7 @@ table {
   cursor: pointer;
   padding: 15px 30px;
   width: 100%;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -661,7 +664,7 @@ table {
 }
 
 .wrapper footer .menu #info2 div {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -718,5 +721,147 @@ table {
   text-align: right;
   border-left: solid 1px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapper .contain {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 90%;
+  }
+  .wrapper .contain {
+    height: auto;
+  }
+  .wrapper .contain .first_page {
+    padding-bottom: 4%;
+  }
+  .wrapper .contain .first_page .order {
+    margin-top: 40%;
+  }
+  .wrapper .third_page {
+    height: auto;
+    padding-top: 3%;
+  }
+  .wrapper .third_page .collection {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .wrapper .third_page .collection .left_side {
+    width: 47%;
+    padding-right: 3%;
+  }
+  .wrapper .third_page .collection .left_side .table {
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .wrapper .third_page .collection .right_side .photos {
+    margin-left: 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+    gap: 5%;
+    height: 100%;
+  }
+  .wrapper .record .form .center {
+    padding-right: 3%;
+    padding-left: 2%;
+    width: 50%;
+  }
+  .wrapper .record .form .center h1 span {
+    padding: 5px 20px;
+  }
+  .wrapper .record .form .center p {
+    width: 100%;
+  }
+  .wrapper .record .form .center #degustation #name input {
+    width: 45%;
+  }
+  .wrapper footer .menu #info {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .wrapper footer .menu #info2 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .wrapper footer .menu #info2 #wine_name {
+    text-align: left;
+    width: 25%;
+    cursor: pointer;
+  }
+  .wrapper footer .menu #info2 #wine_tel {
+    width: 25%;
+    border-left: solid 1px;
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+  .wrapper footer .menu #info2 #social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 25%;
+    border-left: solid 1px;
+  }
+  .wrapper footer .menu #info2 #social a {
+    cursor: pointer;
+  }
+  .wrapper footer .menu #info2 #social a:first-child {
+    padding-left: 5%;
+  }
+  .wrapper footer .menu #info2 #social a:last-child {
+    padding-right: 5%;
+  }
+  .wrapper footer .menu #info2 #wine_email {
+    width: 25%;
+    text-align: right;
+    border-left: solid 1px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper .second_page .descr {
+    height: 100%;
+  }
+  .wrapper .second_page .descr p span {
+    width: 90%;
+  }
+  .wrapper .third_page .collection .left_side {
+    width: 65%;
+  }
+  .wrapper .record .form #grape {
+    width: 25%;
+  }
+  .wrapper .record .form #grape .pic1 {
+    height: 100%;
+  }
+  .wrapper .record .form #barrel {
+    width: 25%;
+  }
+  .wrapper .record .form #barrel .pic2 {
+    height: 90%;
+    width: 80%;
+  }
+  .wrapper .record .form .center h1 {
+    font-size: 30px;
+  }
+  .wrapper footer .menu #info2 div {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
