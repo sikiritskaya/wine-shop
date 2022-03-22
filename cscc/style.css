@@ -837,6 +837,7 @@ table {
 @media screen and (max-width: 1024px) {
   .wrapper .second_page .descr {
     height: 100%;
+    padding-bottom: 30px;
   }
   .wrapper .second_page .descr p span {
     width: 90%;
